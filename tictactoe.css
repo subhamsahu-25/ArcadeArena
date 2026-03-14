@@ -28,6 +28,7 @@ body {
 }
 
 .back-btn:hover { background: #1a1a1a; color: white; border-color: #1a1a1a; }
+
 h1 {
   font-family: 'Syne', sans-serif;
   font-size: clamp(2rem, 6vw, 3rem);

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="rps.css"/>
+</head>
+<body>
+
+  <a href="index.html" class="back-btn">← BACK</a>
+
+  <h1>Rock Paper Scissors</h1>
+
+  <div class="scores">
+    <div class="score-box" id="youBox">
+      <div class="score-label">YOU</div>
+      <div class="score-num" id="youScore">0</div>
+    </div>
+    <div class="score-box" id="drawBox">
+      <div class="score-label">DRAW</div>
+      <div class="score-num" id="drawScore">0</div>
+    </div>
+    <div class="score-box" id="cpuBox">
+      <div class="score-label">CPU</div>
+      <div class="score-num" id="cpuScore">0</div>
+    </div>
+  </div>
+
+  <div class="arena">
+    <div class="fighter">
+      <div class="fighter-label">YOU</div>
+      <div class="fighter-display" id="playerDisplay">❓</div>
+    </div>
+    <div class="vs">VS</div>
+    <div class="fighter">
+      <div class="fighter-label">CPU</div>
+      <div class="fighter-display" id="cpuDisplay">❓</div>
+    </div>
+  </div>
+
+  <div class="status" id="status">Choose your move!</div>
+
+  <div class="choices">
+    <button class="choice-btn" onclick="play('rock')">🪨<span>Rock</span></button>
+    <button class="choice-btn" onclick="play('paper')">📄<span>Paper</span></button>
+    <button class="choice-btn" onclick="play('scissors')">✂️<span>Scissors</span></button>
+  </div>
+
+  <button class="reset-btn" onclick="fullReset()">Reset All</button>
+
+  <script src="rps.js"></script>
+</body>
+</html>

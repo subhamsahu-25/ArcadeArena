@@ -1,9 +1,5 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-* {
-  touch-action: manipulation;
-}
-
 body {
   min-height: 100vh;
   background: #f5f0e8;
@@ -95,7 +91,6 @@ h1 {
   cursor: pointer;
   transition: transform 0.08s, background 0.15s;
   user-select: none;
-  touch-action: manipulation;
 }
 
 #tapBtn:active { transform: scale(0.94); }

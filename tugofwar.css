@@ -12,6 +12,23 @@ body {
   padding: 24px;
 }
 
+.back-btn {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #999;
+  border: 1px solid #ddd;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.back-btn:hover { background: #1a1a1a; color: white; border-color: #1a1a1a; }
+
 h1 {
   font-family: 'Syne', sans-serif;
   font-size: clamp(2rem, 6vw, 3rem);

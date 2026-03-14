@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="tictactoe.css"/>
+</head>
+<body>
+
+  <h1>Tic Tac Toe</h1>
+
+  <div class="scores">
+    <div class="score-box active-x" id="xBox">
+      <div class="score-label">X</div>
+      <div class="score-num" id="xScore">0</div>
+    </div>
+    <div class="score-box" id="dBox">
+      <div class="score-label">Draw</div>
+      <div class="score-num" id="dScore">0</div>
+    </div>
+    <div class="score-box" id="oBox">
+      <div class="score-label">O</div>
+      <div class="score-num" id="oScore">0</div>
+    </div>
+  </div>
+
+  <div class="status" id="status">X's turn</div>
+
+  <div class="board" id="board"></div>
+
+  <div class="btns">
+    <button onclick="playAgain()">Play Again</button>
+    <button onclick="fullReset()">Reset All</button>
+  </div>
+
+  <script src="tictactoe.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  background: #f5f0e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Mono', monospace;
+  gap: 28px;
+  padding: 24px;
+}
+
+h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #1a1a1a;
+}
+
+.scores {
+  display: flex;
+  border: 2px solid #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.score-box {
+  padding: 10px 28px;
+  text-align: center;
+  border-right: 2px solid #1a1a1a;
+  transition: background 0.2s, color 0.2s;
+}
+
+.score-box:last-child { border-right: none; }
+.score-box.active-x   { background: #ff4d6d; color: white; }
+.score-box.active-o   { background: #3a86ff; color: white; }
+
+.score-label {
+  font-size: 0.6rem;
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.score-num {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.status {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  color: #555;
+  text-transform: uppercase;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.cell {
+  width: clamp(90px, 26vw, 120px);
+  height: clamp(90px, 26vw, 120px);
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2rem, 8vw, 3rem);
+  font-weight: 800;
+  transition: border-color 0.15s, transform 0.1s;
+  user-select: none;
+}
+
+.cell:hover:not(.taken) { border-color: #aaa; transform: scale(0.96); }
+.cell.x      { color: #ff4d6d; border-color: #ff4d6d; background: #fff5f7; cursor: default; }
+.cell.o      { color: #3a86ff; border-color: #3a86ff; background: #f0f5ff; cursor: default; }
+.cell.winner { background: #fff9e0; border-color: #f4c430; animation: pop 0.3s ease; }
+
+@keyframes pop {
+  50% { transform: scale(1.1); }
+}
+
+.btns { display: flex; gap: 10px; }
+
+button {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: 2px solid #1a1a1a;
+  background: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.15s, color 0.15s;
+}
+
+button:hover { background: #1a1a1a; color: white; }

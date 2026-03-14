@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tug of War</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="tugofwar.css"/>
+</head>
+<body>
+
+  <h1>Tug of War</h1>
+  <p class="subtitle">TAP FAST — DON'T LET IT SLIP</p>
+
+  <div class="status" id="status">Tap the button to start!</div>
+
+  <div class="track-wrap">
+    <div class="flag flag-left">⚡</div>
+    <div class="track" id="track">
+      <div class="danger-zone left-danger"></div>
+      <div class="danger-zone right-safe"></div>
+      <div class="character" id="character">🎯</div>
+    </div>
+    <div class="flag flag-right">🏆</div>
+  </div>
+
+  <button id="tapBtn">TAP!</button>
+
+  <button class="reset-btn">Restart</button>
+
+  <select class="difficulty">
+    <option value="200">Easy</option>
+    <option value="150">Medium</option>
+    <option value="100">Hard</option>
+  </select>
+
+  <script src="tugofwar.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  background: #0e0e0e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Mono', monospace;
+  padding: 24px;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.header { text-align: center; }
+
+.eyebrow {
+  font-size: 0.6rem;
+  letter-spacing: 0.35em;
+  color: #444;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(0Rem, 20vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: #f5f0e8;
+  line-height: 1;
+}
+
+.games {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 14px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, background 0.2s, transform 0.15s;
+}
+
+.card:hover {
+  border-color: #f5f0e8;
+  background: #222;
+  transform: translateX(4px);
+}
+
+.card-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  background: #0e0e0e;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -0.05em;
+}
+
+.card-body { flex: 1; }
+
+.card-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #f5f0e8;
+  margin-bottom: 4px;
+}
+
+.card-desc {
+  font-size: 0.65rem;
+  color: #555;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+}
+
+.card-arrow {
+  font-size: 1.2rem;
+  color: #333;
+  transition: color 0.2s, transform 0.2s;
+  flex-shrink: 0;
+}
+
+.card:hover .card-arrow {
+  color: #f5f0e8;
+  transform: translateX(4px);
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.55rem;
+  letter-spacing: 0.3em;
+  color: #2a2a2a;
+}

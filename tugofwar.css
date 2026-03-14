@@ -91,6 +91,7 @@ h1 {
   cursor: pointer;
   transition: transform 0.08s, background 0.15s;
   user-select: none;
+  touch-action: manipulation;
 }
 
 #tapBtn:active { transform: scale(0.94); }

@@ -30,7 +30,7 @@ body {
 
 h1 {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(2.5rem, 20vw, 4rem);
+  font-size: clamp(2.5rem, 15vw, 4rem);
   font-weight: 800;
   letter-spacing: -0.04em;
   color: #f5f0e8;

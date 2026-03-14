@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Syne&weight=800&size=40&pause=1000&color=F5F0E8&background=0E0E0E00&center=true&vCenter=true&width=500&lines=🕹️+ARCADE+ARENA" alt="Arcade Arena" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Syne&weight=800&size=40&pause=1000&color=F5F0E8&background=0E0E0E00&center=true&vCenter=true&width=700&lines=🕹️+ARCADE+ARENA" alt="Arcade Arena" />
 
 ### A collection of fun browser games built with pure vanilla web technologies
 
@@ -32,6 +32,10 @@
     <td align="center" width="80"><font size="5">⚡🎯</font></td>
     <td><b>Tug of War</b><br/>Tap fast or the system pulls you back. Choose your difficulty and race to the end.</td>
   </tr>
+  <tr>
+    <td align="center" width="80"><font size="5">🪨📄✂️</font></td>
+    <td><b>Rock Paper Scissors</b><br/>3 rounds against the CPU. Pick your move and outsmart the machine.</td>
+  </tr>
 </table>
 
 ---
@@ -50,7 +54,11 @@ arcade-arena/
 │
 ├── 📄 tugofwar.html      ← Tug of War markup
 ├── 🎨 tugofwar.css       ← Tug of War styles
-└── ⚙️  tugofwar.js        ← Tug of War logic
+├── ⚙️  tugofwar.js        ← Tug of War logic
+│
+├── 📄 rps.html           ← Rock Paper Scissors markup
+├── 🎨 rps.css            ← Rock Paper Scissors styles
+└── ⚙️  rps.js             ← Rock Paper Scissors logic
 ```
 
 ---
@@ -74,6 +82,14 @@ arcade-arena/
 | 4 | If you don't tap in time, ⚡ system pulls it back |
 | 5 | Reach either end to decide the winner |
 
+### 🪨📄✂️ Rock Paper Scissors
+| Step | Action |
+|------|--------|
+| 1 | Click Rock, Paper or Scissors to make your move |
+| 2 | CPU picks randomly |
+| 3 | Best of 3 rounds wins the match 🏆 |
+| 4 | Hit **Reset All** to play again |
+
 ---
 
 ## 🛠️ Tech Stack
@@ -91,6 +107,7 @@ arcade-arena/
 > - ✅ Works in all modern browsers
 > - 📶 No internet connection required after loading
 > - 💾 Tug of War difficulty resets with each new game
+> - 🎮 More games coming soon
 
 ---
 

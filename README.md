@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Syne&weight=800&size=40&pause=1000&color=F5F0E8&background=0E0E0E00&center=true&vCenter=true&width=500&lines=🕹️+ARCADE+ARENA" alt="Arcade Arena" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Syne&weight=800&size=40&pause=1000&color=F5F0E8&background=0E0E0E00&center=true&vCenter=true&width=600&lines=🕹️+ARCADE+ARENA" alt="Arcade Arena" />
 
 ### A collection of fun browser games built with pure vanilla web technologies
 
